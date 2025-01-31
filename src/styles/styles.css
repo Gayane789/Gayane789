@@ -1,0 +1,523 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+body {
+  background-color: #f0f0f0;
+  height: 100vh;
+}
+
+.container-root {
+  width: 100%;
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   padding: 20px; 
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: lightcyan;
+  height: 10%;
+  padding: 20px;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 8px;
+  box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.8); 
+}
+
+.header a {
+  color: black;
+  font-size: 24px;
+  text-decoration: underline;
+  margin-right: 10px;
+}
+
+.header a:hover {
+  color: green;
+}
+
+ .main-section {
+  display: flex;
+  width: 100%;
+ height: 120%; 
+ padding: 20px; 
+} 
+
+
+ 
+ 
+/*   login.css */
+
+
+
+              
+ .form-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 40px);
+}
+
+.login-container {
+  border: 2px solid black;
+  width: 400px;
+  height: 250px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 5px 5px 5px #aaaaaa;
+}
+
+form {
+  margin: 25px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form input {
+  border: 2px solid black;
+  width: 320px;
+  height: 50px;
+  margin: 10px auto;
+  color: black;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+button {
+  border: 2px solid black;
+  width: 150px;
+  height: 50px;
+  margin: 10px auto;
+  color: black;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: lightcyan;
+}
+
+button:hover {
+  background: lightgrey;
+  color: green;
+} 
+/* ================== registration.css======================================= */
+
+ .registration-container {
+  width: 400px;
+  border-radius: 8px;
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: 5px 5px 5px #aaaaaa;
+}
+
+ select {
+  border: 2px solid black;
+  width: 320px;
+  height: 50px;
+  margin: 10px auto;
+  color: black;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.gender {
+  margin-right: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.5rem;
+}
+
+.gender label{
+  font-size: 1.5rem;
+}
+
+.gender input {
+  width: 20px;
+}
+
+.send {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 1rem;
+  } 
+
+  .send input {
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  display: flex;
+  margin-bottom: 10px;
+  padding-left: 10px;
+} 
+
+.send  label{
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+
+.send .btn{
+  width: 40%;
+  height: 40px;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 0.1rem solid black; 
+   cursor: pointer;
+   background-color: lightcyan;
+   color: blue;
+   border-radius: 4px;
+}
+
+ .send .btn:hover{
+  background: lightgrey;
+  color: green;
+}  
+
+/* /================================= */
+
+ @media screen and (max-width: 768px){
+  .main-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+ } 
+
+     /* /////////////  newPost.css //////////////////// */
+
+  
+
+.create-form-container{
+  width: 40%;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column; 
+  border: 2px solid black;
+  box-shadow: 5px 5px 5px #aaaaaa;
+  padding: 20px;
+}
+
+
+#postTitle,
+#postStory,
+#create-new-post{ 
+  width: 98%;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 1.5rem; 
+  color: black;
+  font-family: Georgia, "Times New Roman", Times, serif; 
+  border: 2px solid black;
+}  
+
+#create-new-post:hover{
+background: lightgrey;
+color: green;
+}   
+  /*   home.css //////////////////////////////////////////////*/
+
+.container-root{
+display: flex;
+flex-direction: column;
+height: 100%;
+background-color:white;
+} 
+
+.main-section {
+display: flex;
+/* flex-direction: row; */
+flex: 1;
+padding: 20px;
+box-sizing: border-box;
+} 
+          
+.sidebar{ 
+width: 40%;
+height: 100%;
+padding: 20px;
+background-color: lightgray;
+ box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.8);  
+} 
+
+
+.sidebar .card {
+background-color: #f0f0f0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 25vh;
+width: 95%;
+margin-top: 20px;
+box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.8); 
+}
+
+.sidebar .card-body{
+display: flex;
+border-radius: 4px;
+}
+
+.avatar{
+margin-top: 20px;
+width:100px;
+height: auto;
+border-radius:50%;
+box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.8); 
+cursor: pointer;
+}
+
+.avatar:hover{
+width: 100px;
+height: auto;
+}
+
+.sidebar-text{
+margin-left: 20px;
+font-size: 24px;
+color: black !important;
+} 
+.panel-create-post{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 0 10px;
+background-color: lightcyan;
+width:300px;
+}  
+.panel {
+display: flex;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+justify-content: flex-end;
+align-items: center;
+margin-bottom: 10px;
+padding: 8px;
+}
+.section {
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+margin-left: 20px;
+margin-right: 20px;
+width: 100%;
+overflow: auto;
+}
+
+.section .card{
+height: auto;
+margin: 20px auto;
+border: 2px solid black;
+border-radius: 8px;
+background-color: #f0f0f0;
+color: black;
+box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.8); 
+}
+
+.section .card-body{
+margin-left: 1.5%;
+width: 90%;
+background-color: #f0f0f0; 
+display: flex;
+flex-direction: column;
+}
+
+.card-header {
+font-size: 20px;
+font-weight: bold;
+color: black;
+justify-content:space-between;
+width: 100%;
+}
+
+.section .card-content {
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+align-items: center;
+margin-top: 20px;
+}
+
+
+.section .card-img-top {
+width: 40%;
+height: auto;
+border-radius: 5px;
+margin-right: 20px;
+}
+
+.card-text {
+font-size: 18px;
+color: black;
+} 
+
+  section .edit-card-button,
+  .delete-card-button{
+   color: black; 
+  right: 10px;  
+  font-size: 16px; 
+  background-color: transparent; 
+  border: none; 
+  padding: 4px 8px;
+  position: absolute;
+  bottom: 10px;
+  display: inline-block;
+  display: flex;
+  
+} 
+section .edit-card-button{
+  right: 100px; 
+} 
+
+ section .edit-card-button:hover{
+    color: green;
+  }
+ section .delete-card-button:hover{
+    color: red;
+  }
+
+.footer {
+  position: fixed;
+  left: 30%;
+  right: 40%;
+  bottom: 0%;
+width: 66%;
+height: 10%;
+border: 2px solid black;
+padding: 20px;
+background-color: lightcyan;
+border: 2px solid black;
+border-radius: 8px;
+box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.8); 
+display: flex;
+justify-content: flex-end;
+align-items: center;
+font-size: 24px;
+padding: 20px;
+} 
+
+  /* token.css-ով*/
+
+/* * {
+margin: 0;
+padding: 0;
+border: none;
+outline: none;
+box-sizing: border-box;
+text-decoration: none;
+transition: all 0.2s linear;
+}
+
+body {
+background-color: var(--primary-bg);
+height: 100vh;
+}
+
+.container-root {
+width: 100%;
+height: 100%; 
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 20px;
+}
+
+.header {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+background-color: var(--header-bg);
+height: 10%;
+padding: 20px;
+width: 100%;
+border: 2px solid var(--border-color);
+border-radius: 8px;
+box-shadow: 3px 3px 10px var(--shadow-color);
+}
+
+.header a {
+color: var(--text-color);
+font-size: 24px;
+text-decoration: underline;
+margin-right: 10px;
+}
+
+.header a:hover {
+color: var(--button-hover-text);
+}
+
+
+.main-section {
+display: flex;
+width: 100%;
+height: 120%;
+padding: 20px;
+}
+
+
+.sidebar {
+width: 40%;
+height: 100%;
+padding: 20px;
+background-color: var(--sidebar-bg);
+box-shadow: 3px 3px 10px var(--shadow-color);
+}
+
+.sidebar .card {
+background-color: var(--primary-bg);
+display: flex;
+justify-content: center;
+align-items: center;
+height: 25vh;
+width: 95%;
+margin-top: 20px;
+box-shadow: 3px 3px 10px var(--shadow-color);
+}
+
+.sidebar-text {
+margin-left: 20px;
+font-size: 24px;
+color: var(--text-color) !important;
+}
+
+
+button,
+.send .btn {
+border: 2px solid var(--border-color);
+width: 150px;
+height: 50px;
+margin: 10px auto;
+color: var(--text-color);
+font-size: 1.5rem;
+text-align: center;
+font-family: Georgia, "Times New Roman", Times, serif;
+background-color: var(--button-bg);
+}
+
+button:hover,
+.send .btn:hover {
+background: var(--button-hover-bg);
+color: var(--button-hover-text);
+}
+
+
+.footer {
+width: 100%;
+height: 10%;
+border: 2px solid var(--border-color);
+padding: 20px;
+background-color: var(--header-bg);
+} */

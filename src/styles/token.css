@@ -1,0 +1,12 @@
+:root {
+    --primary-bg: #f0f0f0;
+    --secondary-bg: #ffffff;
+    --header-bg: #e0ffff;
+    --sidebar-bg: lightgray;
+    --button-bg: lightcyan;
+    --button-hover-bg: #d3d3d3;
+    --button-hover-text: #008000;
+    --text-color: #000000;
+    --border-color: black;
+    --shadow-color: rgba(0, 0, 0, 0.8);
+}
